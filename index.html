@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/4e270f13ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="bg-white">
+      <!-- Header Section -->
+
+      <header>
+        <!-- Main navigation container -->
+        <nav
+          class="relative flex w-full flex-nowrap items-center justify-between py-2 text-black hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 font-semibold"
+          data-te-navbar-ref
+        >
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="ml-1">
+              <a class="text-2xl text-gray-500 sm:mx-12 ml-1" href="#"
+                >Safayat</a
+              >
+            </div>
+            <!-- Hamburger button for mobile view -->
+            <button
+              class="block border-0 bg-transparent px-2 text-black hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+              type="button"
+              data-te-collapse-init
+              data-te-target="#navbarSupportedContent2"
+              aria-controls="navbarSupportedContent2"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <!-- Hamburger icon -->
+              <span class="[&>svg]:w-7">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-7 w-7"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+
+            <!-- Collapsible navbar container -->
+            <div
+              class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+              id="navbarSupportedContent2"
+              data-te-collapse-item
+            >
+              <!-- Left links -->
+              <ul
+                class="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row mx-auto"
+                data-te-navbar-nav-ref
+              >
+                <!-- Home link -->
+                <li
+                  class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
+                  data-te-nav-item-ref
+                >
+                  <a
+                    class="active lg:px-2 [&.active] dark:[&.active]"
+                    aria-current="page"
+                    href="#"
+                    data-te-nav-link-ref
+                    >Home</a
+                  >
+                </li>
+                <!-- Features link -->
+                <li
+                  class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                  data-te-nav-item-ref
+                >
+                  <a
+                    class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 lg:px-2 [&.active] dark:[&.active]"
+                    href="#"
+                    data-te-nav-link-ref
+                    >About</a
+                  >
+                </li>
+                <!-- Pricing link -->
+                <li
+                  class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                  data-te-nav-item-ref
+                >
+                  <a
+                    class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 lg:px-2 [&.active] dark:[&.active]"
+                    href="#"
+                    data-te-nav-link-ref
+                    >Skills</a
+                  >
+                </li>
+                <li
+                  class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                  data-te-nav-item-ref
+                >
+                  <a
+                    class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 lg:px-2 [&.active] dark:[&.active]"
+                    href="#"
+                    data-te-nav-link-ref
+                    >Qualifications</a
+                  >
+                </li>
+                <li
+                  class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                  data-te-nav-item-ref
+                >
+                  <a
+                    class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 lg:px-2 [&.active] dark:[&.active]"
+                    href="#"
+                    data-te-nav-link-ref
+                    >Services</a
+                  >
+                </li>
+                <li
+                  class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                  data-te-nav-item-ref
+                >
+                  <a
+                    class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 lg:px-2 [&.active] dark:[&.active]"
+                    href="#"
+                    data-te-nav-link-ref
+                    >Reviews</a
+                  >
+                </li>
+              </ul>
+              <a href="#" class="mx-8 flex items-center"
+                >Contact <img src="send.svg" alt="" class="ml-1"
+              /></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Top Section -->
+
+      <main
+        class="sm:ml-14 ml-2 flex flex-col-reverse sm:flex sm:flex-row sm:space-x-64"
+      >
+        <div class="space-y-4 mt-10 sm:mt-48 sm:w-[50%] text-center">
+          <h1 class="text-4xl font-semibold text-black">
+            Hi, I’m <span class="text-gray-500">Safayat !</span>
+          </h1>
+          <h6 class="font-semibold text-cyan-500 text-xl">
+            Frontend Developer
+          </h6>
+          <p class="font-semibold text-sm">
+            Creates websites and applications using web languages such as HTML,
+            CSS, and JavaScript that allow users to access and interact with the
+            site or app.
+          </p>
+          <button
+            class="bg-gray-900 text-white font-semibold px-8 py-2 rounded-xl flex items-center mx-auto"
+          >
+            Contact Me <img src="send (1).svg" alt="" class="ml-1" />
+          </button>
+        </div>
+        <div class="sm:w-[30%] sm:mt-32 flex items-center">
+          <img
+            src="unnamed 1.jpg"
+            alt=""
+            class="w-full sm:mt-0 border-4 rounded-full border-red-800 mt-20 -ml-1 sm:-ml-10"
+          />
+        </div>
+      </main>
+
+      <!-- About Section -->
+
+      <main>
+        <div class="mt-48">
+          <div class="flex justify-center">
+            <h1 class="text-4xl font-semibold">About Me</h1>
+          </div>
+          <div class="flex justify-center">
+            <p class="font-semibold">My Introduction</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row my-20 justify-between items-center"
+        >
+          <div>
+            <img
+              src="f.jpg"
+              alt=""
+              class="sm:rounded-full rounded-3xl border-4 border-gray-600 shadow-2xl sm:ml-10 sm:w-96 w-[90%] mx-auto"
+            />
+          </div>
+          <div class="sm:w-[50%] w-[100%] space-y-10">
+            <p class="font-semibold ml-4 mr-2 mt-4">
+              Creates websites and applications using web languages such as
+              HTML, CSS, and JavaScript that allow users to access and interact
+              with the site or app.
+            </p>
+            <div
+              class="bg-slate-800 text-white sm:mr-10 mx-2 flex justify-evenly font-semibold py-4 rounded-lg"
+            >
+              <div class="text-center">
+                <h1 class="text-4xl font-semibold">+08</h1>
+                <p>Years <br />experienced</p>
+              </div>
+              <div class="text-center">
+                <h1 class="text-4xl font-semibold">+20</h1>
+                <p>Completed <br />Project</p>
+              </div>
+              <div class="text-center">
+                <h1 class="text-4xl font-semibold">+05</h1>
+                <p>Companies <br />Worked</p>
+              </div>
+            </div>
+            <div class="flex justify-center sm:justify-start">
+              <button
+                class="bg-slate-800 px-4 py-2 rounded-lg text-white font-semibold ml-1.5"
+              >
+                Download C.V
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Skills -->
+
+      <main>
+        <div class="sm:ml-20 ml-3">
+          <div class="flex justify-center mt-40">
+            <h1 class="text-4xl font-semibold">Skills</h1>
+          </div>
+          <p class="font-semibold flex justify-center">My Technical Level</p>
+        </div>
+        <div class="flex justify-center">
+          <div
+            class="sm:my-20 my-5 grid grid-cols-3 grid-rows-2 sm:w-[50%] gap-y-9 ml-[12%]"
+          >
+            <div class="mr-[40%] flex items-center p-4 rounded-2xl shadow-lg">
+              <img src="image 20.png" alt="" />
+            </div>
+            <div class="mr-[40%] flex items-center p-4 rounded-2xl shadow-lg">
+              <img src="image 21.png" alt="" />
+            </div>
+            <div class="mr-[40%] flex items-center p-4 rounded-2xl shadow-lg">
+              <img src="image 22.png" alt="" class="h-[100%] object-cover" />
+            </div>
+            <div class="mr-[40%] flex items-center p-4 rounded-2xl shadow-lg">
+              <img src="image 18.png" alt="" />
+            </div>
+            <div class="mr-[40%] flex items-center p-4 rounded-2xl shadow-lg">
+              <img src="image 19.png" alt="" />
+            </div>
+            <div
+              class="mr-[40%] flex items-center justify-center p-4 rounded-2xl shadow-lg"
+            >
+              <img src="image 23.png" alt="" class="w-[75%]" />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Qualification -->
+
+      <main>
+        <div>
+          <div class="flex justify-center mt-32">
+            <h1 class="text-4xl font-semibold">Qualification</h1>
+          </div>
+          <p class="font-semibold flex justify-center">My Personal Journey</p>
+        </div>
+        <hr
+          class="sm:w-[60%] w-[80%] border-2 border-orange-600 mx-auto mt-32 -mb-4"
+        />
+        <div
+          class="flex justify-between sm:justify-evenly items-center mb-20 mx-5 sm:mx-0"
+        >
+          <div class="rounded-full bg-gray-700 h-7 w-7"></div>
+          <div class="rounded-full bg-blue-700 h-7 w-7"></div>
+          <div class="rounded-full bg-gray-900 h-7 w-7"></div>
+          <div class="rounded-full bg-orange-700 h-7 w-7"></div>
+        </div>
+        <div
+          class="flex justify-between sm:justify-evenly items-center text-center font-semibold -mt-20 sm:mx-6 mx-1"
+        >
+          <div>
+            <h1 class="text-[12px] text-red-600 -ml-5 sm:-ml-0 sm:text-lg">
+              Web <br />Design
+            </h1>
+            <p class="text-xs sm:text-sm">Peru University</p>
+            <p class="text-xs">2009-2014</p>
+          </div>
+          <div>
+            <h1 class="text-[12px] text-red-600 sm:text-lg">Web <br />Development</h1>
+            <p class="text-xs sm:text-sm">Peru University</p>
+            <p class="text-xs">2009-2014</p>
+          </div>
+          <div>
+            <h1 class="text-[12px] text-red-600 sm:text-lg">Master <br />In UI/UX</h1>
+            <p class="text-xs sm:text-sm">Peru University</p>
+            <p class="text-xs">2009-2014</p>
+          </div>
+          <div class="-mr-1">
+            <h1 class="text-[12px] text-red-600 sm:text-lg">Software <br />Engineer</h1>
+            <p class="text-xs sm:-ml-0 mr-1 sm:text-sm">Peru University</p>
+            <p class="text-xs">2009-2014</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Service -->
+
+      <main>
+        <div class="mb-60">
+          <div class="flex justify-center mt-32">
+            <h1 class="text-4xl font-semibold">Service</h1>
+          </div>
+          <p class="font-semibold flex justify-center">What I Offer</p>
+        </div>
+        <div class="flex justify-between sm:mx-12   mx-2">
+          <button><img src="Frame 8.svg" alt="" class="sm:w-12 w-10"><button><img src="Frame_9-removebg-preview.png" alt="" class="sm:w-14 w-11"></button>
+        </div>
+        <div class="w-[80%] h-96 bg-gray-300 sm:py-60 mx-auto font-semibold sm:flex sm:justify-evenly sm:items-center items-start mb-40 -mt-60">
+          <div><img src="image 24.png" alt="" class="w-full" /></div>
+            <div class="space-y-8 sm:w-[40%] w-full mx-3 -ml-1 text-center sm:text-start">
+              <h1 class="sm:text-xl text-lg">
+                Your PSD, XD, AI, Zeplin, Sketch, PNG or JPG file into responsive
+                website
+              </h1>
+              <button
+                class="bg-gray-950 text-white flex items-center rounded-lg px-4 py-2 mx-auto sm:mx-0"
+              >
+                Watch Demo <img src="send (1).svg" alt="" />
+              </button>
+            </div>
+          </div>
+      </main>
+
+      <!-- Testimonial -->
+
+      <main>
+        <div class="sm:mb-40 mb-20">
+          <div class="flex justify-center mt-32">
+            <h1 class="text-4xl font-semibold">Testimonial</h1>
+          </div>
+          <p class="font-semibold flex justify-center">What About My Service</p>
+        </div>
+        <div class="sm:flex grid justify-evenly sm:space-x-16 sm:space-y-0 space-y-12 sm:mx-32 mb-40 bg-gray-100 sm:px-10 sm:py-14 p-4 mx-6">
+          <div class="font-semibold space-y-10">
+            <div class="flex items-center space-x-2">
+              <div>
+                <img src="mask-group2@2x.png" alt="" class="sm:w-16 w-12">
+              </div>
+              <div>
+                <h1 class="text-lg">Ittehad Najat</h1>
+                <p>Client</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-sm sm:text-base">This isn't our first project with Safayat, not will it be the last. He is one of the best developers to work with, and he consistently exceeded our expectations. He delivered a high-quality website within the agreed timeline and communicated regularly. I highly recommend him to anyone looking for a skilled and reliable developer.</p>
+            </div>
+          </div>
+          <div class="font-semibold space-y-10">
+            <div class="flex items-center space-x-2">
+              <div>
+                <img src="Ellipse.jpg" alt="" class="sm:w-16 w-12 rounded-full">
+              </div>
+              <div>
+                <h1 class="text-lg">Hussain Ali</h1>
+                <p>Client</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-sm sm:text-base">This isn't our first project with Safayat, not will it be the last. He is one of the best developers to work with, and he consistently exceeded our expectations. He delivered a high-quality website within the agreed timeline and communicated regularly. I highly recommend him to anyone looking for a skilled and reliable developer.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Contact Me -->
+
+      <main>
+        <div class="sm:mb-40 mb-20">
+          <div class="flex justify-center mt-32">
+            <h1 class="text-4xl font-semibold">Contact Me</h1>
+          </div>
+          <p class="font-semibold flex justify-center">Get In Touch</p>
+        </div>
+      </main>
+    
+    </div>
+  </body>
+</html>
